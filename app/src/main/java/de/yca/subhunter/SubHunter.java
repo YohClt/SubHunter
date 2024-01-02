@@ -14,6 +14,8 @@ import android.graphics.Point;
 import android.view.Display;
 import android.util.Log;
 import android.widget.ImageView;
+
+import java.util.Objects;
 import java.util.Random;
 
 public class SubHunter extends Activity {
@@ -30,6 +32,11 @@ public class SubHunter extends Activity {
         super.onCreate(savedInstanceState);
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        Log.d("Debugging","In onCreate method");
+
+        newGame();
+        draw();
     }
     /*
         This code will execute when a new
@@ -38,7 +45,7 @@ public class SubHunter extends Activity {
         and after the player wins a game.
      */
     void newGame() {
-
+        Log.d("Debugging","In newGame method");
     }
     /*
         Here we will do all the drawing.
@@ -46,7 +53,7 @@ public class SubHunter extends Activity {
         the touch indicator
      */
     void draw() {
-
+        Log.d("Debugging","In draw method");
     }
     /*
         This part of the code will
@@ -55,6 +62,11 @@ public class SubHunter extends Activity {
      */
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
+
+        Log.d("Debugging","In onTouchEvent method");
+
+        takeShot();
+
         return true;
     }
     /*
@@ -63,13 +75,18 @@ public class SubHunter extends Activity {
         calculate the distance from the sub'
         and decide a hit or miss
      */
+    void takeShot(){
+        Log.d("Debugging","In takeShot method");
+    }
+
     // This code says "BOOM!"
     void boom() {
+        Log.d("Debugging","In boom method");
 
     }
 
     // This code prints the debugging text
     void printDebuggingText() {
-
+        Log.d("Debugging","In printDebugging method");
     }
 }
