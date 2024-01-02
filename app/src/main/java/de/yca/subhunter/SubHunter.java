@@ -6,6 +6,16 @@ import android.view.MotionEvent;
 import android.view.Window;
 import android.os.Bundle;
 
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Point;
+import android.view.Display;
+import android.util.Log;
+import android.widget.ImageView;
+import java.util.Random;
+
 public class SubHunter extends Activity {
 
     /*
