@@ -44,8 +44,8 @@ public class SubHunter extends Activity {
         has tapped the screen
      */
     @Override
-    public boolean onTouchEventEvent(MotionEvent motionEvent) {
-        return false;
+    public boolean onTouchEvent(MotionEvent motionEvent) {
+        return true;
     }
     /*
         The code here will execute when
@@ -59,7 +59,7 @@ public class SubHunter extends Activity {
     }
 
     // This code prints the debugging text
-    void printDebbugingText() {
+    void printDebuggingText() {
 
     }
 }
