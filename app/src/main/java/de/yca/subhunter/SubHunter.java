@@ -20,6 +20,22 @@ import java.util.Random;
 
 public class SubHunter extends Activity {
 
+    // These variables can be "seen"
+// throughout the SubHunter class
+    int numberHorizontalPixels;
+    int numberVerticalPixels;
+    int blockSize;
+    int gridWidth = 40;
+    int gridHeight;
+    float horizontalTouched = -100;
+    float verticalTouched = -100;
+    int subHorizontalPosition;
+    int subVerticalPosition;
+    boolean hit = false;
+    int shotsTaken;
+    int distanceFromSub;
+    boolean debugging = true;
+
     /*
         Android runs this code just before
         the player sees the app.
